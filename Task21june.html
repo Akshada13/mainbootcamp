@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasks Monday</title>
+        <link rel="icon" href="https://img.icons8.com/cute-clipart/2x/edit.png" type="image/gif"/>
+    </head>
+    <body>
+        <h3>Task in console for 21-June-2021</h3>
+    </body>
+    <script>
+        //Print odd number in an array using function
+        // TASk-------1
+        /*function* oddNumber(a,b)
+        {        
+        let i = a%2 ? a : ++a;
+        while(i <= b)
+            {
+            yield i;
+            i += 2
+            }
+        }
+        console.log([...oddNumber(1, 10)])
+         */    
+         function oddNumber(arr1)
+       {
+           console.log(arr1);
+           for(var i in arr1)
+           {
+               if(arr1[i]%2 == 0)
+               {
+
+               }
+               else
+               {
+                   console.log(arr1[i]+" is odd using function")
+               }
+           }
+
+       }
+       var num = [2,23,4,5,2,7];
+       var odd1 = oddNumber(num);  
+
+        //convert string in lower case in a giver array
+        function toLowerCas(str)
+        {
+            var lower = str.toLowerCase();
+            console.log(lower)     
+        }
+        toLowerCas("Hello World IS IN LOWERCASE")
+
+
+
+
+
+        //Sum of all numbers in an array
+        function sumOfNumber(a)
+        {
+            var  sum = 0;
+           for(var i in a)
+            {
+                sum = sum + a[i];
+                
+            }
+            console.log(sum)
+
+        }
+        var arr = [1,2,3,4,5,6,7];
+        var sum1 = sumOfNumber(arr);
+
+
+
+       // Return all the prime numbers in an array
+       function returnPrimeNumber(a)
+        {
+            console.log(a);
+           for( var i in a)
+           {
+               if(a[i]<=1)
+               {
+                   console.log(a[i] +" is not a prime")
+               }
+               else
+               {
+                    for(var j in a)
+                    {
+                        if(a[i] % 2==0)
+                        {
+                        console.log(a[i]+ " is prime ")
+                        }
+                        else
+                        {
+                            console.log(a[i]+ " is not a prime")
+                        }
+                    }
+               }
+           }
+
+        }
+        var arr = [1,2,4,5,42,11,33];
+        var prime = returnPrimeNumber(arr);
+
+       /* 
+        //Return all the palindromes in an array
+        function palindromeNumber(a)
+        {
+            console.log(a);
+            for(var i in a)
+            {
+                var n1= a[i];
+                var n2 = a[i].reverse();
+                console.log(n2);
+                if(n1==n2)
+                {
+                    console.log(a[i]+ " is palindrome");
+                }
+                else
+                {
+                    console.log(a[i]+ " not a palindrome");
+                }
+            }
+        }
+        var arr = [121,123,2332,112];
+        var pal = palindromeNumber(arr);
+//Return median of two sorted arrays of same size 
+        function medianOFArray()
+        {
+        }
+        console.log()
+*/
+        //Remove duplicates from an array
+        function removeDuplicate(num)
+        {
+           console.log(num);
+            let unique = [...new Set(num)];
+            console.log(unique);
+
+        }
+        var arr = [1,9,9,12,2,3,3,4,5,5,6];
+        var dup = removeDuplicate(arr);
+
+
+        //Rotate an array by k times 
+        function rotateArray(num,k)
+        {
+            console.log(num);
+            console.log(k);
+            for(let i = 0; i< k; i++)
+            {
+                num.unshift(num.pop())
+            }
+            console.log(num)
+        }
+        var arr = [1,2,3,4,5,6];
+        var a =4;
+        var pal = rotateArray(arr,a);
+
+        //TASK--------2
+
+        //Print odd numbers in an array 
+
+        let fun=(arr)=>
+       {
+           console.log(arr);
+           for(var i in arr)
+           {
+               if(arr[i]%2 == 0)
+               {
+
+               }
+               else
+               {
+                   console.log(arr[i]+" is odd using arrow function")
+               }
+           }
+
+       }
+       var num = [2,23,4,5,2,7];
+       var odd1 = (num);
+       // console.log([...oddNumber(1, 10)])
+
+        //Sum of all numbers in an array
+        let func =(a)=>
+        {
+            var  sum = 0;
+           for(var i in a)
+            {
+                sum = sum + a[i];
+                
+            }
+            console.log(sum)
+
+        }
+        var arr = [1,2,3,4,5,6,7];
+        var sum1 = sumOfNumber(arr);
+
+        //Return all the prime numbers in an array
+
+        let func1 =(a)=>
+        {
+            console.log(a);
+           for( var i in a)
+           {
+               if(a[i]<=1)
+               {
+                   console.log(a[i] +" is not a prime")
+               }
+               else
+               {
+                    for(var j in a)
+                    {
+                        if(a[i] % 2==0)
+                        {
+                        console.log(a[i]+ " is prime ")
+                        }
+                        else
+                        {
+                            console.log(a[i]+ " is not a prime")
+                        }
+                    }
+               }
+           }
+
+        }
+        var arr = [1,2,4,5,42,11,33];
+        var prime = returnPrimeNumber(arr);
+
+
+        //Return all the palindromes in an array
+        let func2 =(a)=>
+        {
+            console.log(a);
+            for(var i in a)
+            {
+                var n1= a[i];
+                var n2 = a[i].reverse();
+                console.log(n2);
+                if(n1==n2)
+                {
+                    console.log(a[i]+ " is palindrome");
+                }
+                else
+                {
+                    console.log(a[i]+ " not a palindrome");
+                }
+            }
+
+        }
+        var arr = [121,123,2332,112];
+        var pal = (arr);
+        //triangle shape
+        let x = 5;
+        let y = 5;
+let str1 = "";
+for(let i = 1 ; i < x ; i++)
+{
+    for(let j = 1 ; j < y ; j++)
+    {
+        if((i + j) >= x)
+        {
+            str1 = str1.concat("*");    
+        }
+        else
+        {
+        str1 = str1.concat(" ");
+        }
+    }
+    str1 = str1.concat("\n");
+}
+console.log(str1); 
+    </script>
+</html>1
