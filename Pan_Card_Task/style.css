@@ -1,0 +1,13 @@
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 0em;
+    
+
+}
+#header1{
+    column-span: "2"
+}
+.red{
+    color: red;;
+}
