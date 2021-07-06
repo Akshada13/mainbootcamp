@@ -1,0 +1,62 @@
+1.What's the difference between JavaScript and JScript?
+
+
+JavaScript:---------
+    JavaScript is a scripting language developed by Netscape Communications designed for developing client and server Internet applications. Netscape Navigator is designed to interpret JavaScript embedded into Web pages. JavaScript is independent of Sun Microsystem's Java language.
+
+JScript:-----------
+    Microsoft JScript is an open implementation of Netscape's JavaScript. JScript is a high-performance scripting language designed to create active online content for the World Wide Web. JScript allows developers to link and automate a wide variety of objects in Web pages, including ActiveX controls and Java programs. Microsoft Internet Explorer is designed to interpret JScript embedded into Web pages.
+
+2.What is the difference between statically typed and dynamically typed languages?
+
+
+Statically typed languages:-------
+
+A language is statically typed if the type of a variable is known at compile time. For some languages this means that you as the programmer must specify what type each variable is (e.g.: Java, C, C++); other languages offer some form of type inference, the capability of the type system to deduce the type of a variable (e.g.: OCaml, Haskell, Scala, Kotlin)
+
+Statically typed programming languages do type checking (i.e. the process of verifying and enforcing the constraints of types) at compile-time as opposed to run-time.
+
+The main advantage here is that all kinds of checking can be done by the compiler, and therefore a lot of trivial bugs are caught at a very early stage.
+Examples: C, C++, Java, Rust, Go, Scala
+
+Dynamically typed languages:----------
+A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc. This means that you as a programmer can write a little quicker because you do not have to specify types every time (unless using a statically-typed language with type inference).
+
+Dynamically typed programming languages do type checking at run-time as opposed to compile-time.
+
+
+Examples: Perl, Ruby, Python, PHP, JavaScript
+
+3.Scripting Language vs Programming Language:--------
+
+
+Scripting languages:-----
+Scripting languages are programming languages that don't require an explicit compilation step.
+
+For example, in the normal case, you have to compile a C program before you can run it. But in the normal case, you don't have to compile a JavaScript program before you run it. So JavaScript is sometimes called a "scripting" language.
+
+Programming Language:-------
+Programming Language is compiled to machine code and run on the hardware of the underlying Operating System. 
+
+
+4. Difference between Nodejs and JavaScript?
+S.No    	Javascript	                                NodeJS
+1.	Javascript is a programming            1. NodeJS is a Javascript runtime environment.
+    language that is used for writing 
+    scripts on the website.	
+2.  Javascript can only be run             2. NodeJS code can be run outside the browser.
+    in the browsers.  
+3.  It is basically used on the            3. It is mostly used on the server-side.
+    client-side.
+4.  Javascript is capable enough to        4. Nodejs does not have capability to add html tags
+    add HTML and play with the DOM.
+5.  Javascript can run in any browser      5. Nodejs can only run in V8 engine of chrome.
+    engine as like JS core in safari 
+    and Spidermonkey in Firefox.  
+6.  Javascript is used in frontend         6. Nodejs is used in server-side development.
+    development.    
+7.  Some of the javascript frameworks      7. Some of the Nodejs modules are Lodash, express 
+    are RamdaJS, TypedJS, etc.                etc. These modules are to be imported from npm. 
+8.  It is the upgraded version of ECMA     8. Nodejs is written in C, C++ and Javascript.
+    script that uses Chrome’s V8 engine
+    written in C++.    
